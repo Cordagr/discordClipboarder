@@ -4,10 +4,17 @@ import re
 import pyperclip
 import requests
 from urllib.parse import urlparse
+import discord
+from discord.ext import commands
+from urllib.parse import urlparse
 
+# Configurations
+DISCORD_BOT_TOKEN = "YOUR_BOT_TOKEN" # Replace with your bot token
+DISCORD_GUILD_ID = YOUR_GUILD_ID # Replace with discord server ID
 # Folder to save images
 SAVE_DIR = "discord_image_downloads"
 os.makedirs(SAVE_DIR, exist_ok=True)
+
 
 # Regular expression to detect URLS (Formatted as JPG,GIF,PNG, ...)
 IMAGE_URL_PATTERN = re.compile(r'https?://\S+\.(?:png|jpg|jpeg|gif|webp)')
