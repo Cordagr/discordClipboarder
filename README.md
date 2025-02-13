@@ -8,22 +8,27 @@ DiscordClipboarder is a Python-Intregated Discord bot that utilizes discord libr
 
 # Installation
 1. Clone the repository:
+   ```Code
    git clone https://github.com/Cordagr/discordClipboarder.git
-2. Navigate to project directory:
-   cd discordClipboarder
-3. Install the required dependencies:
+   ```
+3. Navigate to project directory:
+   ```Code cd discordClipboarder
+   ```
+4. Install the required dependencies:
+   ```Code
    pip install -r requirements.txt
+   ```
 
 
 # Configuration
 1. Replace YOUR_BOT_TOKEN in discordBotScript.py with your Discord bot token.
 2. Replace YOUR_GUILD_ID in discordBotScript.py with your Discord server ID.
 
-#
-Usage
+# Usage
 Run the script:
 
 ``` Code
 python discordBotScript.py
-The bot will start monitoring the clipboard for image URLs and upload the images as custom emojis to the specified Discord server.
 ```
+The bot will start monitoring the clipboard for image URLs and upload the images as custom emojis to the specified Discord server.
+
