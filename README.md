@@ -12,7 +12,8 @@ DiscordClipboarder is a Python-Intregated Discord bot that utilizes discord libr
    git clone https://github.com/Cordagr/discordClipboarder.git
    ```
 3. Navigate to project directory:
-   ```Code cd discordClipboarder
+   ```Code
+   cd discordClipboarder
    ```
 4. Install the required dependencies:
    ```Code
