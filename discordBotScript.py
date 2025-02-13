@@ -44,6 +44,24 @@ with open(save_path, "wb") as img_file:
 except requests.exceptions.RequestException as e:
   print("Failed to download image: {e}")
 
+# Uploads image to private discord
+async def upload_image_to_discord(file_path):
+  guild = bot.get_guild(DISCORD_GUILD_ID)
+  if guild is None:
+    print(" Bot is not connected to the server")
+    return
+  with open(file_path,"rb") as file:
+    image_bytes = file.read()
+  # Uploading image as emoji
+emoji_name = os.path.splitext(os.path.basename(file_path))[0]
+try:
+  emoji = await guild.create_custom_emoji(name=emoji_name, image=image_bytes)
+  print("Emoji successfuly uploaded::{emoji.name}:")
+except discord.HTTPException as e:
+  printf("Failed to upload emoji: {e}")
+
+
+
 
 
 
